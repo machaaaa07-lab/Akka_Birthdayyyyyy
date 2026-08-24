@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Something Special ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Pacifico&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <!-- Floating Hearts -->
+    <div class="hearts"></div>
+
+    <!-- =========================
+         PAGE 1 - PASSCODE
+    ========================== -->
+
+    <section class="page active" id="lockPage">
+
+        <div class="lock-container">
+
+            <div class="cat-card">
+                <img src="cat.jpg" alt="Cute Cat">
+            </div>
+
+            <div class="lock-box">
+
+                <h2>Enter a passcode</h2>
+
+                <div class="pass-display">
+
+                    <span id="dot1"></span>
+                    <span id="dot2"></span>
+                    <span id="dot3"></span>
+                    <span id="dot4"></span>
+
+                </div>
+
+                <div class="keypad">
+
+                    <button onclick="pressKey('1')">1</button>
+                    <button onclick="pressKey('2')">2</button>
+                    <button onclick="pressKey('3')">3</button>
+
+                    <button onclick="pressKey('4')">4</button>
+                    <button onclick="pressKey('5')">5</button>
+                    <button onclick="pressKey('6')">6</button>
+
+                    <button onclick="pressKey('7')">7</button>
+                    <button onclick="pressKey('8')">8</button>
+                    <button onclick="pressKey('9')">9</button>
+
+                    <button onclick="pressKey('*')">*</button>
+                    <button onclick="pressKey('0')">0</button>
+                    <button onclick="pressKey('#')">#</button>
+
+                </div>
+
+                <p class="wrong" id="wrongText"></p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PAGE 2 - QUESTION
+    ========================== -->
+
+    <section class="page" id="questionPage">
+
+        <div class="question-container">
+
+            <h1 id="questionTitle">
+                I made something special for u
+            </h1>
+
+            <div class="cute-image">
+
+                <img
+                    src="cute-couple.png"
+                    alt="Cute Couple"
+                >
+
+            </div>
+
+            <div class="buttons">
+
+                <button
+                    class="yes-btn"
+                    onclick="yesClicked()"
+                >
+                    YES
+                </button>
+
+                <button
+                    class="no-btn"
+                    onclick="noClicked()"
+                >
+                    NO
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PAGE 3 - WHY DID
+    ========================== -->
+
+    <section class="page" id="whyPage">
+
+        <div class="question-container">
+
+            <h1>Why did 😭</h1>
+
+            <div class="cute-image">
+
+                <img
+                    src="sad-couple.png"
+                    alt="Cute Couple"
+                >
+
+            </div>
+
+            <button
+                class="retry-btn"
+                onclick="tryAgain()"
+            >
+                TRY AGAIN
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PAGE 4 - BIRTHDAY WISH
+    ========================== -->
+
+    <section class="page" id="wishPage">
+
+        <div class="wish-card">
+
+            <div class="decoration camera">📷</div>
+            <div class="decoration heart1">♡</div>
+            <div class="decoration heart2">♡</div>
+            <div class="decoration candy">🍭</div>
+            <div class="decoration cherries">🍒</div>
+
+            <h1>MY WISH FOR U</h1>
+
+            <div class="wish-text">
+
+                <p>Happiest bday baby 💋💗</p>
+
+                <p>
+                    I wish may god bless you with all the happiness
+                    and success in your life.
+                </p>
+
+                <p>
+                    May you always be the happiest person and even
+                    keep ppl around the happiest.
+                </p>
+
+                <p>
+                    Hope this year brings you more joy and you get
+                    what you have been praying for.
+                </p>
+
+                <p>
+                    You are the most beautiful part of my life.
+                </p>
+
+                <p>
+                    You are my comfort person.
+                </p>
+
+                <p>
+                    You make me the happiest and annoy me too 😜.
+                </p>
+
+                <p>
+                    Thank you for staying in my life, understanding
+                    me and always listening to me.
+                </p>
+
+                <p>
+                    Thank you for always being there for me for all
+                    the efforts, love and care you have shown.
+                </p>
+
+                <p>
+                    Thank you for adding happy moments in my life 🥺💞.
+                </p>
+
+                <p>
+                    Once again happiest birthday rajju 💋
+                </p>
+
+                <p>
+                    May we celebrate all our bday's in life together.
+                </p>
+
+                <p>
+                    Forever Your's ❤️
+                </p>
+
+                <p>
+                    Mathan
+                </p>
+
+            </div>
+
+            <button
+                class="click-me"
+                onclick="showMemories()"
+            >
+                CLICK<br>ME
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PAGE 5 - MEMORIES
+    ========================== -->
+
+    <section class="page" id="memoryPage">
+
+        <div class="memory-container">
+
+            <h1>Our Memories ❤️</h1>
+
+            <p class="memory-subtitle">
+                Some moments I will always keep in my heart.
+            </p>
+
+            <div class="photo-collage">
+
+                <div class="photo photo1">
+                    <img src="photo1.jpg" alt="Memory 1">
+                </div>
+
+                <div class="photo photo2">
+                    <img src="photo2.jpg" alt="Memory 2">
+                </div>
+
+                <div class="photo photo3">
+                    <img src="photo3.jpg" alt="Memory 3">
+                </div>
+
+                <div class="photo photo4">
+                    <img src="photo4.jpg" alt="Memory 4">
+                </div>
+
+                <div class="photo photo5">
+                    <img src="photo5.jpg" alt="Memory 5">
+                </div>
+
+            </div>
+
+            <div class="date">
+                19 • 06 • 2026
+            </div>
+
+            <p class="forever">
+                Forever & Always ❤️
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Confetti -->
+    <div id="confetti"></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
