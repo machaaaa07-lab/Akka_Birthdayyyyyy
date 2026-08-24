@@ -4,7 +4,7 @@
 
 let enteredCode = "";
 
-const correctCode = "1906";
+const correctCode = "2808";
 
 
 /* =========================
